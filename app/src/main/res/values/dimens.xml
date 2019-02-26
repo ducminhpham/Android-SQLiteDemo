@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Size -->
+    <dimen name="small_textSize">14sp</dimen>
+    <dimen name="normal_textSize">18sp</dimen>
+    <dimen name="large_textSize">22sp</dimen>
+
+    <!-- Padding -->
+    <dimen name="small_padding">16dp</dimen>
+    <dimen name="normal_padding">22dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="small_margin">16sp</dimen>
+    <dimen name="normal_margin">22dp</dimen>
+
+    <!-- Custom button appearance -->
+    <dimen name="default_button_corner">8dp</dimen>
+    <dimen name="default_button_padding">12dp</dimen>
+</resources>

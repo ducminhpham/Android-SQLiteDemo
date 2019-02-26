@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base style of buttons -->
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_textColor</item>
+        <item name="android:textSize">@dimen/small_textSize</item>
+    </style>
+
+    <!-- Style of default button -->
+    <style name="DefaultButton" parent="CustomButton">
+        <item name="android:background">@drawable/default_button</item>
+    </style>
+
+    <!-- Style of warning button -->
+    <style name="WarningButton" parent="CustomButton">
+        <item name="android:background">@drawable/warning_button</item>
+    </style>
+
+    <!-- Style for Name TextView on plant row -->
+    <style name="NameTextView">
+        <item name="android:background">@drawable/row_textview_first</item>
+        <item name="android:textColor">@color/light_textColor</item>
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Style for Type TextView on plant row -->
+    <style name="TypeTextView">
+        <item name="android:background">@drawable/row_textview_last</item>
+        <item name="android:textColor">@color/light_textColor</item>
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Default TextView on Plant row -->
+    <style name="DefaultTextView">
+        <item name="android:background">@drawable/row_textview_default</item>
+        <item name="android:textColor">@color/light_textColor</item>
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>

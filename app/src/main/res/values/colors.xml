@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Colors of different states of default buttons -->
+    <color name="default_button_active">#55C758</color>
+    <color name="default_button_disabled">#79967A</color>
+    <color name="default_button_pressed">#49AD4C</color>
+    <color name="default_button_hovered">#65E969</color>
+
+    <!-- Colors of different states of warning buttons -->
+    <color name="warning_button_active">#C52D2D</color>
+    <color name="warning_button_disabled">#A32626</color>
+    <color name="warning_button_pressed">#B82828</color>
+    <color name="warning_button_hovered">#E93636</color>
+
+    <!-- Text color -->
+    <color name="light_textColor">#ffffff</color>
+</resources>

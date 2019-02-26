@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/normal_padding"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <!-- This TableLayout is for inserting new plant -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="@dimen/normal_padding"
+            android:background="@drawable/rounded_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:text="Plant Information"
+                android:textSize="@dimen/large_textSize"
+                android:textStyle="bold"/>
+
+            <TableRow>
+                <TextView
+                    android:text="Name"
+                    android:textSize="@dimen/normal_textSize"/>
+                <EditText
+                    android:id="@+id/plantName_editText"
+                    android:layout_marginStart="@dimen/normal_textSize"
+                    android:hint="Enter plant name"
+                    android:textSize="@dimen/normal_textSize" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Type"
+                    android:textSize="@dimen/normal_textSize"/>
+                <EditText
+                    android:id="@+id/plantType_editText"
+                    android:layout_marginStart="20dp"
+                    android:hint="Enter plant type"
+                    android:textSize="@dimen/normal_textSize"/>
+            </TableRow>
+
+            <Button
+                android:id="@+id/insert_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="Insert Plant to Database"
+                android:enabled="false"
+                style="@style/DefaultButton" />
+
+            <Button
+                android:id="@+id/allPlants_button"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/DefaultButton"
+                android:text="View All Plants"/>
+
+            <Button
+                android:id="@+id/clearAll_button"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WarningButton"
+                android:text="Clear All"/>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:padding="@dimen/normal_padding"
+            android:background="@drawable/rounded_border"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Query"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textSize="@dimen/normal_textSize"/>
+                <EditText
+                    android:id="@+id/queryType_editText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/normal_textSize"
+                    android:hint="Enter a plant type for query"
+                    android:textSize="@dimen/normal_textSize" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/queryType_button"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/DefaultButton"
+                android:text="View Query Results"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set how rounded the corners of the view are -->
+    <corners android:radius="@dimen/default_button_corner"/>
+    <!-- Set default padding -->
+    <padding
+        android:top="@dimen/default_button_padding"
+        android:bottom="@dimen/default_button_padding"
+        android:left="@dimen/default_button_padding"
+        android:right="@dimen/default_button_padding"/>
+    <!-- Set default color -->
+    <solid android:color="@color/default_button_hovered"/>
+</shape>

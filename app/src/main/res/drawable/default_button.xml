@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This specifies the appearance of a view when it is disabled-->
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/default_button_disabled">
+    </item>
+
+    <!-- This specifies the appearance of a view when it is pressed-->
+    <item
+        android:state_pressed="true"
+        android:state_enabled="true"
+        android:drawable="@drawable/default_button_pressed">
+    </item>
+
+    <!-- This specifies the appearance of a view when it is hovered (and enabled)-->
+    <item
+        android:state_hovered="true"
+        android:state_enabled="true"
+        android:drawable="@color/default_button_hovered">
+    </item>
+
+    <!-- This specifies default appearance of a view -->
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/default_button_active">
+    </item>
+
+</selector>
